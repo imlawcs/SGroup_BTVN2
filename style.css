@@ -10,6 +10,7 @@
 .container1 {
     margin-left: 101.500px; 
     margin-right: 101.500px;
+    white-space: nowrap;
     width: 1116px;
     max-width: 1140px;
 }
@@ -20,9 +21,10 @@
 }
 
 .header-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: inline-block;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
     /* height: fit-content; */
 }
 
@@ -31,17 +33,20 @@
     font-size: 18px;
     letter-spacing: 3px;
     color: #000;
-    display: flex;
-    align-items: center;
+    display: inline-block;
+    /* display: flex; */
+    /* align-items: center; */
     text-decoration: none;
 }
 
 .logo span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
     width: 40px;
     height: 40px;
+    line-height: 40px;
     background-color: #000;
     border-radius: 4px;
     color: #FFF;
@@ -53,12 +58,18 @@
 
 .social {
     list-style: none;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    display: inline-block;
+    position: absolute;
+    right: 105px;
+    padding: 0;
+    margin: 1px;
+    line-height: 45px;
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
 }
 
 .social li {
+    display: inline-block;
     margin-left: 12px;
 }
 
@@ -68,15 +79,19 @@
     color: #FFF;
     width: 24px;
     height: 24px;
+    line-height: 24px;
     background-color: #F26464;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
     text-align: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
     font-size: 16px;
 }
 
 .pic {
+    display: inline-block;
     padding-left: 12px; 
     padding-right: 12px; 
 }
@@ -127,7 +142,7 @@
 }
 
 .col {
-    display: flex; 
+    display: inline-block; 
     box-sizing: border-box; 
     /* flex-wrap: wrap; */
     /* margin-left: 12px; 
@@ -136,15 +151,20 @@
 }
 
 .welcome {
+    display: inline-block;
     padding-left: 12px;
     padding-right: 12px;
     font-family: 'Inter', sans-serif;
+    vertical-align: top;
 }
 
 .welcome section {
+    display: inline-block;
     padding-left: 70px;
     padding-right: 100px;
     width: 471px;
+    height: 517px;
+    line-height: 517px;
 }
 
 .welcome section h1 span {
@@ -156,6 +176,8 @@
 }
 
 .welcome section h1 {
+    display: block;
+    white-space: normal;
     font-weight: 580;
     font-size: 48px;
     line-height: 60px;
@@ -165,9 +187,10 @@
 }
 
 .list {
-    display: flex;
+    /* display: inline-block; */
+    /* display: flex; */
     list-style: none;
-    align-items: center;
+    /* align-items: center; */
     margin: 0;
     margin-top: 60px;
     line-height: 1.5;
@@ -187,6 +210,7 @@
 }
 
 .list li {
+    display: inline-block;
     margin-right: 60px;
 }
 
@@ -194,9 +218,12 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    display: block;
+    white-space: normal;
+    width: 546px;
     margin-top: 11px;
 }
 
@@ -214,9 +241,12 @@
 }
 
 .skill-section{
+    display: inline-block;
     padding-left: 12px;
     padding-right: 12px;
     width: 50%;
+    vertical-align: top;
+    width: 546px;
 }
 
 h1, h2 {
@@ -225,7 +255,7 @@ h1, h2 {
 }
 
 h1 {
-    display: block;
+    display: inline-block;
     font-weight: 600;
     font-size: 48px;
     line-height: 60px;
@@ -238,4 +268,5 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
+    box-sizing: border-box;
 }
